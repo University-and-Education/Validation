@@ -1,6 +1,5 @@
 package ru.validation.validation.impl;
 
-import org.springframework.stereotype.Component;
 import ru.validation.exception.ValidationException;
 import ru.validation.validation.FieldValidator;
 import ru.validation.validation.ParamValidator;
@@ -10,7 +9,6 @@ import java.lang.reflect.Field;
 import java.util.Map;
 import java.util.Set;
 
-@Component
 public class AnnotationBasedParamValidatorImpl implements ParamValidator {
 
     private final Map<Class<? extends Annotation>, FieldValidator> validationFunctions;

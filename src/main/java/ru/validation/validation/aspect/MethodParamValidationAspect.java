@@ -22,5 +22,4 @@ public class MethodParamValidationAspect {
     public void validateParameters(JoinPoint joinPoint) {
         Stream.of(joinPoint.getArgs()).forEach(validator::validate);
     }
-
 }
